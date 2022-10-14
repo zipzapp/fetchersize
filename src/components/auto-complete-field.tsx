@@ -8,7 +8,7 @@ export default function AutoCompleteFormField(props: AutoCompleteFormFieldProps)
 
   const renderInput = useCallback((params: any) => {
     return <TextField {...params} label={label} required={required} fullWidth />;
-  }, []);
+  }, [label, required]);
 
   return (
     <Controller
